@@ -29,7 +29,7 @@ This repository contains **battle-tested enterprise frameworks** for building an
 
 ## 📖 Documentation Structure
 
-### 1. 📱 [iOS Testing Framework](./ios-testing.md)
+### 1. 📱 [iOS Testing Framework](./ios-development-enterprise.md)
 **Comprehensive iOS Testing Strategy for Banking & Enterprise Applications**
 
 - **Purpose**: Achieve 95% automated test coverage for iOS applications
@@ -45,7 +45,7 @@ This repository contains **battle-tested enterprise frameworks** for building an
 
 ```bash
 # Quick Usage
-"Claude, analyze my iOS banking app and generate tests following ios-testing.md. 
+"Claude, analyze my iOS banking app and generate tests following ios-development-enterprise.md. 
 Target 95% coverage with focus on Transfers module."
 ```
 
@@ -99,7 +99,7 @@ Include user authentication, PostgreSQL integration, and Docker setup."
 graph TD
     A[Start] --> B{Platform?}
     B -->|iOS App| C[ios-development.md]
-    B -->|iOS Testing| D[ios-testing.md]
+    B -->|iOS Testing| D[ios-development-enterprise.md]
     B -->|Web App| E[claude.md]
     C --> F[Clean Architecture]
     D --> G[95% Test Coverage]
@@ -114,7 +114,7 @@ Place the appropriate `.md` file in your project root:
 # For iOS projects
 cp ios-development.md ~/YourProject/claude.md
 # or
-cp ios-testing.md ~/YourProject/claude.md
+cp ios-development-enterprise.md ~/YourProject/claude.md
 
 # For web projects
 cp claude.md ~/YourProject/claude.md
@@ -137,7 +137,7 @@ Execute tasks 1-3 in PARALLEL, then proceed with 4-5.
 
 #### **For iOS Testing**
 ```markdown
-Using ios-testing.md framework:
+Using ios-development-enterprise.md framework:
 1. Analyze existing codebase architecture
 2. Identify test coverage gaps
 3. Generate unit tests for ViewModels
@@ -347,7 +347,7 @@ docker build -t app:latest .
 ```mermaid
 graph LR
     A[Project Type] --> B{Existing iOS App?}
-    B -->|Yes| C[ios-project-testing.md]
+    B -->|Yes| C[ios-development-enterprise.md]
     B -->|No| D{New iOS App?}
     D -->|Yes| E[ios-development-enterprise.md]
     D -->|No| F{Web Application?}
