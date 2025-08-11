@@ -193,6 +193,8 @@ async badQuery(userId: string) {
 
 ## 🎨 IMPORTANT: REACT FRONTEND STANDARDS
 
+- Install: tailwind using vite and shadcn-ui
+
 ### ALWAYS Follow React Best Practices:
 
 ```tsx
